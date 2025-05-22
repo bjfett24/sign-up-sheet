@@ -4,9 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-Up Form</title>
-    <style src="styles.css" defer></style>
+    <link rel="stylesheet" href="styles.css"></link>
 </head>
 <body>
-    
+    <div id="leftSide">
+        <div id="logo">
+            <img src="gorilla.png" alt="gorilla">
+            Gorilla Jams
+        </div>
+    </div>
+    <div id="rightSide">
+        <div id="msg">
+            Have you been looking for a local music studio to host info-sessions and organized events? The Gorilla Jams Club hosts group jam sessions at the Broad Street Music Studio. If you're new to playing music, we also provide educational sessions once a week! <em>Sign-Up now </em>to be part of the Gorilla Jams Club!
+        </div>
+        <form action="" method="post">
+            <div id="inputSection">
+                <h3>Become a member today!</h3>
+                <div id="inputs">
+                    <div class="left">
+                        <div id="firstNameBox">
+                            <label for="fName">FIRST NAME</label>
+                            <input type="text" id="fName" name="first_name" required>
+                        </div>
+                        <div id="emailBox">
+                            <label for="mail">EMAIL</label>
+                            <input type="email" id="mail" name="email" required>
+                        </div>
+                        <div id="passwordBox">
+                            <label for="pass">PASSWORD</label>
+                            <input type="password" id="pass" name="password" required>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div id="lastNameBox">
+                            <label for="lName">LAST NAME</label>
+                            <input type="text" id="lName" name="last_name" required>
+                        </div>
+                        <div id="phoneNumBox">
+                            <label for="pNum">PHONE NUMBER</label>
+                            <input type="text" id="pNum" name="phone_number">
+                        </div>
+                        <div id="confPasswordBox">
+                            <label for="confPass">CONFIRM PASSWORD</label>
+                            <input type="password" id="confPass" name="confirm_password">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <button type="submit">Create Account</button>
+            <p id="logInMsg">Already have an account? <a id="logIn" href="">Log in</a></p>
+        </form>
+    </div>
 </body>
 </html>

@@ -1,1 +1,149 @@
 /* Style sheet for sign-up form*/
+
+@font-face {
+    font-family: 'jump_streetsregular';
+    src: url('jump-street-font/jump-streets-webfont.woff2') format('woff2'),
+         url('jump-street-font/jump-streets-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+:root, body {
+    height: 100vh;
+    width: auto;
+    margin: 0px;
+    font-size: 16px;
+
+    --text-font: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+body {
+    display: flex;
+}
+
+#leftSide {
+    flex: 4;
+    position: relative;
+    background-image: url(brick-wall.jpg);
+    background-size: contain;
+}
+
+img {
+    width: 8rem;
+    height: auto;
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+    gap: 20px;;
+    position: absolute;
+    top: 20%;
+    font-family: 'jump_streetsregular', sans-serif;
+    font-size: 6rem;
+    background-color: rgba(0, 0, 0, 0.43);
+    width: 100%;
+    color: rgb(255, 241, 222);
+    
+
+}
+
+#rightSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 6;
+    padding-top: 6rem;
+    padding-bottom: 10rem;
+    background-color: rgb(248, 242, 234);
+}
+
+#msg {
+    font-family: var(--text-font);
+    font-weight: 600;
+    text-align: left;
+    flex: 2;
+    width: clamp(45ch, 60ch, 75ch);
+    line-height: 1.4;
+
+}
+
+#inputSection {
+    background-color: white;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    flex: 6;
+
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: var(--text-font);
+    margin-top: 0px;
+
+}
+
+#inputs {
+    display: flex;
+    gap: 30px;
+    justify-content: left;
+
+
+}
+
+.left, .right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+label {
+    letter-spacing: .3rem;
+    font-size: 0.8rem;
+    font-family: var(--text-font);
+}
+
+input {
+    width: 14rem;
+}
+
+
+
+
+
+
+
+
+button {
+    background-color: rgb(129, 45, 45);
+    border: 3px solid rgb(129, 45, 45);
+    border-radius: 15px;
+    padding: 10px;
+    flex: 2;
+    margin: 2rem;
+    color: white;
+}
+
+#logInMsg {
+    font-family: var(--text-font);
+    font-size: 0.8rem;
+    flex: 1;
+
+}
+
+#logInMsg, button, h3, #inputs, #msg {
+    margin-left: 50px;
+}
+
+label, input {
+    display: block
+}
+
+a, em {
+    color: rgb(129, 45, 45);
+    font-weight: 700;
+}
