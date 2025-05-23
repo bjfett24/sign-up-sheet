@@ -29,15 +29,21 @@ body {
     background-size: contain;
 }
 
-img {
-    width: 8rem;
-    height: auto;
+#logo a {
+    width: auto;
+    height: 1.5em;
 }
+
+img {
+    width: auto;
+    height: 1.5em;
+}
+
 
 #logo {
     display: flex;
     justify-content: center;
-    gap: 20px;;
+    gap: 25px;;
     position: absolute;
     top: 20%;
     font-family: 'jump_streetsregular', sans-serif;
@@ -162,11 +168,11 @@ label, input {
     display: block
 }
 
-a, em {
+#logIn, em {
     color: rgb(129, 45, 45);
     font-weight: 700;
 }
 
-a:hover {
+#logIn:hover {
     color: rgb(249, 79, 207);
 }
