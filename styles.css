@@ -111,6 +111,20 @@ input {
     width: 14rem;
 }
 
+input:focus {
+    border: 3px solid rgb(48, 133, 253);
+    box-shadow: 0 6px 12px -3px rgba(0, 0, 0, 0.1);
+}
+
+#pass:invalid:not(:placeholder-shown), #confPass:invalid:not(:placeholder-shown) {
+    border: 3px solid red;
+}
+
+
+#pass:valid:not(:placeholder-shown), #confPass:valid:not(:placeholder-shown) {
+    border: 3px solid green;
+}
+
 
 
 
@@ -126,6 +140,11 @@ button {
     flex: 2;
     margin: 2rem;
     color: white;
+}
+
+button:hover {
+    border: 5px solid white;
+    box-shadow: 0 6px 12px -3px rgba(0, 0, 0, 0.5);
 }
 
 #logInMsg {
@@ -146,4 +165,8 @@ label, input {
 a, em {
     color: rgb(129, 45, 45);
     font-weight: 700;
+}
+
+a:hover {
+    color: rgb(249, 79, 207);
 }
